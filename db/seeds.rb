@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 
-csv_customers = File.read(Rails.root.join('db', 'seeds', 'data', 'customers.csv'))
+csv_customers = File.read(Rails.root.join('db', 'seeds', 'customers.csv'))
 csv = CSV.parse(csv_customers, :headers => true, :encoding => 'ISO-8859-1')
 puts csv_text
