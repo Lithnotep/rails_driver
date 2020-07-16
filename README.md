@@ -1,3 +1,21 @@
+# Endpoints
+
+List of resources. 
+'/api/v1/<resource>'. 
+List by id. 
+'/api/v1/<resource>/<id>'.
+Relationships. 
+'/api/v1/merchants/:id/items' - Merchant with all thier items. 
+'/api/v1/items/:id/merchant' - Item with associated merchant. 
+'/api/v1/merchants/find?<attribute>=<value>' Locate merchant by name.
+Business Intellignce.   
+'/api/v1/merchants/find_all?<attribute>=<value>' Locate all merchants with related name.
+'/api/v1/merchants/most_revenue?quantity=<value>'. List of merchants with highest revenue (quantity will return that many top revenues). 
+'/api/v1/merchants/most_items?quantity=<value>'. List of merchants with most items sold  (quantity will return that many top revenues). 
+  
+  
+
+
 # Rails Driver
 
 This application is part of the [Rails Engine](https://backend.turing.io/module3/projects/rails_engine) project for the Turing School of Software and Design.
